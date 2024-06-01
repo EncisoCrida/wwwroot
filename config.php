@@ -12,5 +12,6 @@ $pass = "cdegyadz1209#C";
 //    ajustes generales            //
 ////////////////////////////////////
 $nombre_app = "Soporte Online";
-$ruta_bots = "c:\Users\USER\Desktop\LordsBot-Release\config/";
+$ruta_bots = "C:\Users\Administrator\Desktop\LordsBot-Release\config/";
+// $ruta_bots = "c:\Users\USER\Desktop\LordsBot-Release\config/";
 ?>
