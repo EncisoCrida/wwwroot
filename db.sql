@@ -52,26 +52,30 @@ ON UPDATE NO ACTION;
 INSERT INTO `tb_bots` (`id_bot`, `igg_id`, `id_user`, `fecha_expire`, `fecha_registro`) VALUES (NULL, '1111111111', '1', '2024-05-30 23:20:38.000000', '2024-05-30 23:20:38.000000'), (NULL, '22222222', '1', '2024-05-30 23:20:38.000000', '2024-05-30 23:20:38.000000');
 
 
-DELIMITER $$
 
+DELIMITER ;
 DROP FUNCTION IF EXISTS buscarUsuario;
-CREATE FUNCTION `buscarUsuario` (UsuarioBuscar VARCHAR(100)) RETURNS INTEGER DETERMINISTIC
-BEGIN
-    DECLARE resultado INT(2);
-    SET resultado := (SELECT COUNT(*) FROM tb_users WHERE usuario = UsuarioBuscar);
-    IF resultado > 0 THEN
+DELIMITER $$
+    CREATE FUNCTION `buscarUsuario` (UsuarioBuscar VARCHAR(100))
+    RETURNS INTEGER
+    BEGIN
+    declare resultado INT(2);
+    set resultado:=(select count(*) from tb_users where usuario = UsuarioBuscar);
+    if resultado > 0 then
         RETURN 1;
-    ELSE
-        RETURN 2;
+        else
+        return 2;
     END IF;
 END$$
 
 DELIMITER ;
-
 DROP FUNCTION IF EXISTS buscarClave;
-CREATE FUNCTION `buscarClave` (UsuarioBuscar VARCHAR(100)) RETURNS VARCHAR(500) READS SQL DATA
-BEGIN
+DELIMITER $$
+    CREATE FUNCTION `buscarClave` (UsuarioBuscar varchar(100))
+    RETURNS VARCHAR(500)
+    BEGIN
     DECLARE cla VARCHAR(500);
-    SET cla := (SELECT clave FROM tb_users WHERE usuario = UsuarioBuscar);
+    set cla = '';
+    SET cla = (SELECT clave FROM tb_users WHERE usuario=UsuarioBuscar);
     RETURN cla;
 END$$
