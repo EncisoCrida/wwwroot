@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+Options -SymLinksIfOwnerMatch
+RewriteEngine on
+
+# No reescribir solicitudes a archivos existentes
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# No reescribir solicitudes a directorios existentes
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Reescribir todas las solicitudes dentro de la carpeta usuarios/ a controller.php
+RewriteRule ^inicio/ usuarios/controller/controller.php?seccion=1 [L]
+RewriteRule ^general/ usuarios/controller/controller.php?seccion=2 [L]

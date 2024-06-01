@@ -1,0 +1,180 @@
+<div class="container-fluid py-4">
+    <form id="FormAgenerales">
+        <!-- Pergaminos de misiones -->
+        <div class="row">
+            <h5 class="card-title mb-2">Pergaminos de misiones</h5>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="misionesTerritorio" id="misionesDeTerritorio">
+                    <label class="form-check-label" for="misionesDeTerritorio">Misiones de Territorio</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Reclamar todas las misiones de territorio" data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="pergaminosAdmin" id="pergaminosAdministrativas" checked="">
+                    <label class="form-check-label" for="pergaminosAdministrativas">Usar Pergaminos Administrativos</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Usar todos los pergaminos de misiones administrativas" data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="misionesAdministrativas" id="misionesAdministrativas" checked="">
+                    <label class="form-check-label" for="misionesAdministrativas">Reclamar Misiones Administrativas</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Reclamar automáticamente las misiones administrativas" data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="pergaminosGremio" id="pergaminosDeGremio" checked="">
+                    <label class="form-check-label" for="pergaminosDeGremio">Usar Pergaminos de Gremio</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Usar todos los pergaminos de misiones de gremio" data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="misionesGremio" id="misionesDeGremio" checked="">
+                    <label class="form-check-label" for="misionesDeGremio">Reclamar Misiones de Gremio</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Reclamar automáticamente las misiones de gremio" data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <hr class="border border-info border-1 opacity-50">
+        </div>
+
+        <!-- Amuletos y estrellas -->
+        <div class="row">
+            <h5 class="card-title mb-2">Amuletos y Estrellas</h5>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="usarEstrellasSagradas" id="estrellasSagradas">
+                    <label class="form-check-label" for="estrellasSagradas">Usar Estrellas Sagradas</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Por defecto se usa solo el intento gratis diario, si se activa esta opción usará todas las estrellas que estén fuera de la bolsa"
+                        data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="usarAmuletos" id="usarAmuletos">
+                    <label class="form-check-label" for="usarAmuletos">Usar Amuletos</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Por defecto se usa solo el intento gratis diario, si se activa esta opción usará todos los amuletos que estén fuera de la bolsa"
+                        data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <hr class="border border-info border-1 opacity-50">
+        </div>
+
+        <!-- Programar spam -->
+        <div class="row">
+            <h5 class="card-title mb-2">Programar Spam <span data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Asegúrate de tener la construcción automática desactivada y contar con un edificio de nivel 5 para hacer spam"
+                    data-container="body" data-animation="true">
+                <i class="fas fa-question-circle"></i>
+            </span></h5>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="spamAutomatico" id="spamAutomatico">
+                    <label class="form-check-label" for="spamAutomatico">Activar Spam automático</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Si se activa esta opción, el bot realizará spam automático cada X tiempo según lo configures"
+                        data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="CantidadSpamAutomatico" class="form-control-label">Cantidad de Spam <span
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Cantidad de spam a realizar cada X horas" data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span></label>
+                    <input class="form-control" type="number" name="CantidadSpamAutomatico" id="CantidadSpamAutomatico">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="spanXhoras" class="form-control-label">Cada X Hora <span data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Cada cuántas horas se va a activar el spam automático"
+                            data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span></label>
+                    <input class="form-control" type="number" name="spanXhoras" id="spanXhoras">
+                </div>
+            </div>
+            <hr class="border border-info border-1 opacity-50">
+        </div>
+
+        <!-- Otros ajustes -->
+        <div class="row">
+            <h5 class="card-title mb-2">Otros Ajustes</h5>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="tiempoReconexion" class="form-control-label">Tiempo de Reconexión (segundos) <span
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Tiempo que tarda el bot en reconectarse cuando alguien entra a la cuenta"
+                            data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span></label>
+                    <input class="form-control" type="number" name="tiempoReconexion" id="tiempoReconexion">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="openAllCheats" id="openAllCheats">
+                    <label class="form-check-label" for="openAllCheats">Abrir Cofres de la bolsa</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Si se activa esta opción, se abrirán automáticamente todos los cofres de la bolsa"
+                        data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="diarioDeAventura" id="diarioDeAventura">
+                    <label class="form-check-label" for="diarioDeAventura">Diario de Aventura</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Si se activa esta opción, se cumplirán las misiones del diario de aventura automáticamente"
+                        data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="pruebaDeFuego" id="pruebaDeFuego">
+                    <label class="form-check-label" for="pruebaDeFuego">Prueba de Fuego</label>
+                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Si se activa esta opción, se realizará la prueba de fuego automáticamente"
+                        data-container="body" data-animation="true">
+                        <i class="fas fa-question-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <hr class="border border-info border-1 opacity-50">
+        </div>
+
+        <input name="" id="" class="btn btn-primary" type="submit" value="Guardar cambios" />
+    </form>
+</div>
