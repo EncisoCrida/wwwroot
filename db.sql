@@ -49,7 +49,7 @@ REFERENCES `tb_users`(`id_user`)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
-INSERT INTO `tb_bots` (`id_bot`, `igg_id`, `id_user`, `fecha_expire`, `fecha_registro`) VALUES (NULL, '1875366782', '1', '2024-05-30 23:20:38.000000', '2024-05-30 23:20:38.000000'), (NULL, '22222222', '1', '2024-05-30 23:20:38.000000', '2024-05-30 23:20:38.000000');
+INSERT INTO `tb_bots` (`id_bot`, `igg_id`, `id_user`, `fecha_expire`, `fecha_registro`) VALUES (NULL, '1875366782', '1', '2024-05-30 23:20:38.000000', '2024-05-30 23:20:38.000000'), (NULL, '1800026971', '1', '2024-05-30 23:20:38.000000', '2024-05-30 23:20:38.000000');
 
 
 
